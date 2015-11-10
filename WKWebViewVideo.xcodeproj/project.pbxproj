@@ -12,6 +12,8 @@
 		781569521BF18C90008B953C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781569501BF18C90008B953C /* Main.storyboard */; };
 		781569541BF18C90008B953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781569531BF18C90008B953C /* Assets.xcassets */; };
 		781569571BF18C90008B953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 781569551BF18C90008B953C /* LaunchScreen.storyboard */; };
+		7815695F1BF18DE6008B953C /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 7815695E1BF18DE6008B953C /* index.html */; };
+		781569611BF191F5008B953C /* small.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 781569601BF191F5008B953C /* small.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		781569531BF18C90008B953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781569561BF18C90008B953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		781569581BF18C90008B953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7815695E1BF18DE6008B953C /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		781569601BF191F5008B953C /* small.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = small.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +58,14 @@
 		7815694B1BF18C90008B953C /* WKWebViewVideo */ = {
 			isa = PBXGroup;
 			children = (
+				781569601BF191F5008B953C /* small.mp4 */,
 				7815694C1BF18C90008B953C /* AppDelegate.swift */,
 				7815694E1BF18C90008B953C /* ViewController.swift */,
 				781569501BF18C90008B953C /* Main.storyboard */,
 				781569531BF18C90008B953C /* Assets.xcassets */,
 				781569551BF18C90008B953C /* LaunchScreen.storyboard */,
 				781569581BF18C90008B953C /* Info.plist */,
+				7815695E1BF18DE6008B953C /* index.html */,
 			);
 			path = WKWebViewVideo;
 			sourceTree = "<group>";
@@ -123,6 +129,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				781569571BF18C90008B953C /* LaunchScreen.storyboard in Resources */,
+				781569611BF191F5008B953C /* small.mp4 in Resources */,
+				7815695F1BF18DE6008B953C /* index.html in Resources */,
 				781569541BF18C90008B953C /* Assets.xcassets in Resources */,
 				781569521BF18C90008B953C /* Main.storyboard in Resources */,
 			);
@@ -250,6 +258,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lovelett.WKWebViewVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -261,6 +270,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WKWebViewVideo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = me.lovelett.WKWebViewVideo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

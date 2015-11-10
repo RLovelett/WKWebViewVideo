@@ -16,6 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+
+    if let index = NSBundle.mainBundle().URLForResource("index", withExtension: "html") {
+      let libraryDirectory = NSFileManager.defaultManager().URLsForDirectory(.LibraryDirectory, inDomains: .UserDomainMask)[0]
+      let libraryIndex = libraryDirectory.URLByAppendingPathComponent("index").URLByAppendingPathExtension("html")
+      _ = try? NSFileManager.defaultManager().removeItemAtURL(libraryIndex)
+      _ = try? NSFileManager.defaultManager().copyItemAtURL(index, toURL: libraryIndex)
+    }
+
+    if let video = NSBundle.mainBundle().URLForResource("small", withExtension: "mp4") {
+      let libraryDirectory = NSFileManager.defaultManager().URLsForDirectory(.LibraryDirectory, inDomains: .UserDomainMask)[0]
+      let libraryVideo = libraryDirectory.URLByAppendingPathComponent("small").URLByAppendingPathExtension("mp4")
+      _ = try? NSFileManager.defaultManager().removeItemAtURL(libraryVideo)
+      _ = try? NSFileManager.defaultManager().copyItemAtURL(video, toURL: libraryVideo)
+    }
+
     return true
   }
 
